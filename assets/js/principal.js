@@ -10,3 +10,10 @@ const codeUsuario = crypto.randomUUID();
 
 subtitulo.innerHTML = fechaActual();
 
+btnEnviar.addEventListener('click', enviarInformacion);
+cajaTexto.addEventListener('keypress',(event) => {
+  if (event.key === 'Enter') {
+    enviarInformacion();
+  }
+});
+

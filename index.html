@@ -6,6 +6,8 @@
     <title>Traductor</title>
     <link rel="stylesheet" href="/assets/css/estilos.css" />
     <script src="./assets/js/fecha.js" defer></script>
+    <script src="./assets/js/mensaje.js" defer></script>
+    <script src="./assets/js/traducir.js" defer></script>
     <script src="./assets/js/principal.js" defer></script>
   </head>
   <body>
@@ -25,7 +27,7 @@
       <!-- cuerpo: inicio -->
       <div class="traductor">
         <div class="traductor-contenedor">
-          <span class="spn-cuerp"> </span>
+          <span id="spn-cuerp"> </span>
         </div>
         <form
           id="frm-traductor"
@@ -45,6 +47,7 @@
           />
           <select id="cmb-idioma" class="combo-idioma">
             <option value="ingles">Inglés</option>
+            <option value="español">Español</option>
             <option value="frances">Francés</option>
             <option value="aleman">Alemán</option>
             <option value="italiano">Italiano</option>
